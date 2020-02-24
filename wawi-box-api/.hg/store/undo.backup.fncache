@@ -1,0 +1,12 @@
+data/src/test/java/com/jkaref/wawi/api/AppTest.java.i
+data/src/main/java/com/jkaref/wawi/api/model/GsonUtil.java.i
+data/src/main/java/com/jkaref/wawi/api/App.java.i
+data/.hgflow.i
+data/.flow.i
+data/pom.xml.i
+data/src/main/java/com/jkaref/wawi/api/model/Angebote.java.i
+data/src/main/java/com/jkaref/wawi/api/model/Data.java.i
+data/.hgignore.i
+data/src/main/java/com/jkaref/wawi/api/Product.java.i
+data/src/main/java/com/jkaref/wawi/api/ProductLocation.java.i
+data/src/test/java/com/jkaref/wawi/api/model/GsonUtilTest.java.i

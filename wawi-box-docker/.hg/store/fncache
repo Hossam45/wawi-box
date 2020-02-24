@@ -1,0 +1,12 @@
+data/.mvn/wrapper/maven-wrapper.properties.i
+data/.hgflow.i
+data/src/main/docker/conf/etc/postgresql/9.6/main/pg_hba.conf.i
+data/.hgignore.i
+data/src/main/docker/bin/wait-for-postgres.sh.i
+data/src/main/docker/conf/etc/postgresql/9.6/main/conf.d.hg/listen-addresses.conf.i
+data/pom.xml.i
+data/mvnw.i
+data/src/main/docker/docker-entrypoint.sh.i
+data/mvnw.cmd.i
+data/src/main/docker/Dockerfile.i
+data/.mvn/wrapper/maven-wrapper.jar.i

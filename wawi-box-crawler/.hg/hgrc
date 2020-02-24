@@ -1,0 +1,5 @@
+[paths]
+default=ssh://hg@vcs.jkaref.com/development/labs/wawi-box-master/wawi-box-crawler/_main
+hossam-dev=ssh://hg@vcs.jkaref.com/people/hossam.hassan/wawi-box-master/wawi-box-crawler/_main
+ps-dev=ssh://hg@vcs.jkaref.com/people/philipp.schwarz/wawi-box-master/wawi-box-crawler/_main
+od-dev=ssh://hg@vcs.jkaref.com/people/oliver.durstewitz/wawi-box-crawler/_main

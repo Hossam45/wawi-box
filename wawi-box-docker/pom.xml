@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) [j]karef GmbH year .
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.jkaref.wawi</groupId>
+        <artifactId>wawi-box-master</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>wawi-box-docker</artifactId>
+    <name>Wawi Box Crawler 4 Docker</name>
+    <packaging>pom</packaging>
+    <description>Release Deployment for Wawi Box Crawler (standalone)
+    </description>
+
+    <dependencies>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>wawi-box-crawler</artifactId>
+            <version>${project.version}</version>
+            <type>jar</type>
+            <classifier>pkg</classifier>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.0.2</version>
+                <executions>
+                    <execution>
+                        <id>add_custom_truststore</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <overwrite>true</overwrite>
+                            <outputDirectory>
+                                src/main/docker/app
+                            </outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>
+                                        ../wawi-box-crawler/src/main/resources/db
+                                    </directory>
+                                    <includes>
+                                        <include>
+                                            wawi-box-crawler-initial.sql
+                                        </include>
+                                    </includes>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+                    <execution>
+                        <id>copy</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <artifactItems>
+                        <artifactItem>
+                            <groupId>${project.groupId}</groupId>
+                            <artifactId>wawi-box-crawler</artifactId>
+                            <version>${project.version}</version>
+                            <type>jar</type>
+                            <classifier>pkg</classifier>
+                            <overWrite>true</overWrite>
+                            <outputDirectory>
+                                src/main/docker/app
+                            </outputDirectory>
+                            <destFileName>wawi-box-crawler-pkg.jar</destFileName>
+                        </artifactItem>
+                    </artifactItems>
+                    <outputDirectory>${project.build.directory}
+                    </outputDirectory>
+                    <overWriteReleases>true</overWriteReleases>
+                    <overWriteSnapshots>true</overWriteSnapshots>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>io.fabric8</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>0.24.0</version>
+                <configuration>
+                    <images>
+                        <image>
+                            <alias>wawi-box-crawler</alias>
+                            <name>
+                                registry.cloud.jkaref.com:20443/release/wawi-box-docker/wawi-box-crawler
+                            </name>
+                            <build>
+                                <dockerFileDir>.</dockerFileDir>
+                            </build>
+                            <run>
+                                <namingStrategy>alias</namingStrategy>
+                            </run>
+                        </image>
+                    </images>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>docker-build</id>
+                        <goals>
+                            <goal>build</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

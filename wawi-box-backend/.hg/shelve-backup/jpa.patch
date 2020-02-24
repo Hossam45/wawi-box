@@ -1,0 +1,24 @@
+# HG changeset patch
+# User shelve@localhost
+# Date 1524745348 -7200
+#      Thu Apr 26 14:22:28 2018 +0200
+# Node ID 736897dcbcf6f3293ed88371a18309ce17d51bdf
+# Parent  82039df4f968884f7fafe89fe44e2d6ccfd77d46
+changes to: [IMPR] * add DatabaseConnection
+
+diff --git a/src/main/java/com/jkaref/wawi/backend/DBProduct.java b/src/main/java/com/jkaref/wawi/backend/DBProduct.java
+new file mode 100644
+--- /dev/null
++++ b/src/main/java/com/jkaref/wawi/backend/DBProduct.java
+@@ -0,0 +1,11 @@
++package com.jkaref.wawi.backend;
++
++import com.jkaref.wawi.api.Product;
++
++
++
++
++public class DBProduct extends Product {
++
++
++}

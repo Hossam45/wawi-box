@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.jkaref.wawi:wawi-box-crawler:pkg:1.0.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/jkaref/wawi/wawi-box-crawler/1.0.0-SNAPSHOT/wawi-box-crawler-1.0.0-SNAPSHOT-pkg.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/jkaref/wawi/wawi-box-crawler/1.0.0-SNAPSHOT/wawi-box-crawler-1.0.0-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/jkaref/wawi/wawi-box-crawler/1.0.0-SNAPSHOT/wawi-box-crawler-1.0.0-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

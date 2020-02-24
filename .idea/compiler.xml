@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="wawi-box-api" />
+        <module name="wawi-box-backend" />
+        <module name="wawi-box-crawler" />
+        <module name="wawi-box-frontend" />
+        <module name="wawi-box-migration" />
+        <module name="wawi-box-rest-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="wawi-box-api" target="1.8" />
+      <module name="wawi-box-backend" target="1.8" />
+      <module name="wawi-box-crawler" target="1.8" />
+      <module name="wawi-box-docker" target="1.8" />
+      <module name="wawi-box-frontend" target="1.8" />
+      <module name="wawi-box-master" target="1.8" />
+      <module name="wawi-box-master (1)" target="1.8" />
+      <module name="wawi-box-master (2)" target="1.8" />
+      <module name="wawi-box-migration" target="1.8" />
+      <module name="wawi-box-rest-api" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

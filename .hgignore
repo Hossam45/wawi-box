@@ -1,0 +1,5 @@
+syntax: glob
+org.eclipse.m2e.core.prefs
+.project
+.DS_Store
+dumps/**

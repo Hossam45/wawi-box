@@ -1,0 +1,15 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head><title>Home Page</title></head>
+<body>
+<table class="table">
+    <tr>
+        <td>Id</td>
+        <td>Title</td>
+    </tr>
+    <tr th:each="product: ${dataList}">
+        <td th:text="${product.id}"></td>
+        <td th:text="${product.title}"></td>
+    </tr>
+</table>
+</body>
+</html>

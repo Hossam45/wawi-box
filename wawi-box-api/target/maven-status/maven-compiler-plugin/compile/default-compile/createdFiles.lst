@@ -1,0 +1,5 @@
+com/jkaref/wawi/api/App.class
+com/jkaref/wawi/api/model/Data.class
+com/jkaref/wawi/api/model/Angebote.class
+com/jkaref/wawi/api/model/GsonUtil.class
+com/jkaref/wawi/api/ProductLocation.class

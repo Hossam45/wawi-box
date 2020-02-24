@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/wawi-box-api/wawi-box-api.iml" filepath="$PROJECT_DIR$/wawi-box-api/wawi-box-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wawi-box-backend/wawi-box-backend.iml" filepath="$PROJECT_DIR$/wawi-box-backend/wawi-box-backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wawi-box-crawler/wawi-box-crawler.iml" filepath="$PROJECT_DIR$/wawi-box-crawler/wawi-box-crawler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wawi-box-docker/wawi-box-docker.iml" filepath="$PROJECT_DIR$/wawi-box-docker/wawi-box-docker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wawi-box-frontend/wawi-box-frontend.iml" filepath="$PROJECT_DIR$/wawi-box-frontend/wawi-box-frontend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wawi-box-master.iml" filepath="$PROJECT_DIR$/wawi-box-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wawi-box-master (1).iml" filepath="$PROJECT_DIR$/wawi-box-master (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/wawi-box-migration/wawi-box-migration.iml" filepath="$PROJECT_DIR$/wawi-box-migration/wawi-box-migration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wawi-box-rest-api/wawi-box-rest-api.iml" filepath="$PROJECT_DIR$/wawi-box-rest-api/wawi-box-rest-api.iml" />
+    </modules>
+  </component>
+</project>

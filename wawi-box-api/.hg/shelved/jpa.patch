@@ -1,0 +1,31 @@
+# HG changeset patch
+# User shelve@localhost
+# Date 1524745143 -7200
+#      Thu Apr 26 14:19:03 2018 +0200
+# Node ID 23a0c599b9af053707ede52500ae9dbeb442f693
+# Parent  77c1630752dd0f65cee0bedbdac93b6e9fb5370d
+changes to: [IMPR] * add Product to api
+
+diff --git a/src/main/java/com/jkaref/wawi/api/Product.java b/src/main/java/com/jkaref/wawi/api/Product.java
+--- a/src/main/java/com/jkaref/wawi/api/Product.java
++++ b/src/main/java/com/jkaref/wawi/api/Product.java
+@@ -1,9 +1,19 @@
+ package com.jkaref.wawi.api;
+ 
++import javax.persistence.Entity;
++import javax.persistence.GeneratedValue;
++import javax.persistence.GenerationType;
++import javax.persistence.Id;
+ import java.util.ArrayList;
+ import java.util.List;
+ 
++import static javax.persistence.GenerationType.AUTO;
++
++@Entity
++
+ public class Product {
++    @Id
++    @GeneratedValue(strategy=GenerationType.AUTO)
+ 
+     private String title;
+     private String manufaeturer;

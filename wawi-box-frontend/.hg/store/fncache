@@ -1,0 +1,13 @@
+data/.hgflow.i
+data/src/main/resources/application.properties.i
+data/.hgignore.i
+data/src/main/resources/templates/tabelle.html.i
+data/src/main/java/com/jkaref/wawi/SimpleController.java.i
+data/pom.xml.i
+data/src/main/resources/templates/test.html.i
+data/src/main/java/com/jkaref/wawi/App.java.i
+data/src/test/java/com/jkaref/wawi/ApplicationTest.java.i
+data/src/main/java/com/jkaref/wawi/Application.java.i
+data/src/main/resources/templates/home.html.i
+data/src/test/java/com/jkaref/wawi/AppTest.java.i
+data/src/main/java/com/jkaref/wawi/DataJSON.java.i

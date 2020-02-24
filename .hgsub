@@ -1,0 +1,7 @@
+wawi-box-api = ../wawi-box-api/_main
+wawi-box-backend = ../wawi-box-backend/_main
+wawi-box-frontend = ../wawi-box-frontend/_main
+wawi-box-crawler = ../wawi-box-crawler/_main
+wawi-box-migration = ../wawi-box-migration/_main
+wawi-box-docker = ../wawi-box-docker/_main
+wawi-box-rest-api = ../wawi-box-rest-api/_main
